@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # run cd docs
+      - name: docs
+        run: cd docs
+        
       - uses: actions/checkout@v2
         with:
           # fetch all commits to get last updated time or other git log info
@@ -38,10 +42,6 @@ jobs:
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
-
-      # run cd docs
-      - name: docs
-        run: cd docs
 
       # run build script
       - name: Build VuePress site
