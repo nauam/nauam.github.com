@@ -39,9 +39,12 @@ jobs:
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
 
+      # run cd docs
+      - name: docs
+        run: cd docs
+
       # run build script
       - name: Build VuePress site
-        run: cd docs
         run: yarn docs:build
 
       # please check out the docs of the workflow for more details
