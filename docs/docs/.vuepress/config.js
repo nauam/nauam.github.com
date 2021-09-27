@@ -27,7 +27,7 @@ module.exports = {
             ["/pages/TravisCI.md", "TravisCI"]
         ],
         //GitHub.
-        repo: "nauam/nauam.github.io/qwcdocs",
+        repo: "nauam/nauam.github.io/docs",
         repoLabel: "Github",
         docsDir: "docs",
         docsBranch: "master",
