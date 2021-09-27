@@ -1,5 +1,4 @@
 module.exports = {
-    base: "/",
     title: 'Hello, VuePress!',
     description: 'This is my first VuePress site',
     head: [
@@ -29,7 +28,6 @@ module.exports = {
         //GitHub.
         repo: "nauam/nauam.github.io/docs",
         repoLabel: "Github",
-        docsDir: "",
         docsBranch: "master",
         editLinks: true,
         editLinkText: "Github",
