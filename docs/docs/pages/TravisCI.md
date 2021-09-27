@@ -1,0 +1,24 @@
+# Token
+
+Settings --> Environment Variables Token
+
+```yaml {12}
+language: node_js
+node_js:
+  - lts/*
+install:
+  - yarn install
+script:
+  - yarn docs:build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vuepress/dist
+  github_token: $GITHUB_TOKEN 
+  keep_history: true
+  on:
+    branch: master 
+```
+
+- NAME : GITHUB_TOKEN （`github_token: $GITHUB_TOKEN` ）
+- VALUE : \*\*\*\*Token\*\*\*\*
