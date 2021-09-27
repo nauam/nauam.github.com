@@ -29,7 +29,7 @@ module.exports = {
         //GitHub.
         repo: "nauam/nauam.github.io/docs",
         repoLabel: "Github",
-        docsDir: "docs",
+        docsDir: "",
         docsBranch: "master",
         editLinks: true,
         editLinkText: "Github",
