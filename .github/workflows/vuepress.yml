@@ -1,4 +1,4 @@
-name: vuepress
+name: docs
 
 on:
   # trigger deployment on every push to main branch
@@ -26,7 +26,6 @@ jobs:
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
-        working-directory: ./vuepress #directory
 
       - name: Handle yarn cache
         uses: actions/cache@v2
@@ -42,12 +41,10 @@ jobs:
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
-        working-directory: ./vuepress #directory
 
       # run build script
       - name: Build VuePress site
         run: yarn docs:release
-        working-directory: ./vuepress #directory
 
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
@@ -57,7 +54,7 @@ jobs:
           # deploy to gh-pages branch
           target_branch: gh-pages-vuepress
           # deploy the default output dir of VuePress
-          build_dir: vuepress/docs/.vuepress/dist #directory
+          build_dir: docs/.vuepress/dist
         env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
