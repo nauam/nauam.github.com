@@ -23,10 +23,6 @@ jobs:
           # choose node.js version to use
           node-version: '14'
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
       # cache node_modules
       - name: Cache dependencies
         uses: actions/cache@v2
