@@ -22,7 +22,6 @@ jobs:
         with:
           # choose node.js version to use
           node-version: '14'
-        working-directory: ./vuepress #directory
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
