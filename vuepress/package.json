@@ -1,9 +1,9 @@
 {
     "private": true,
     "workspaces": [
-        "vuepree/packages/vuepress",
-        "vuepree/packages/vuepress-vite",
-        "vuepree/packages/@vuepress/*"
+        "vuepress/packages/vuepress",
+        "vuepress/packages/vuepress-vite",
+        "vuepress/packages/@vuepress/*"
     ],
     "scripts": {
         "build": "tsc --build",
