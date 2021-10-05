@@ -1,47 +1,15 @@
-# Documentation
-
-Documentation project.
-
-## Getting starting
-
-### Dependencies
-
-* NVM - Gerenciador de Versões do Node
-
-```sh
- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
- source ~/.bashrc
- nvm list-remote
- nvm install lts/erbium; nvm use lts/erbium
-```
-
-* YARN
-
-```sh
- sudo apt install npm
- sudo npm install --global yarn
-```
-
-### Recommended setup steps
-
-Run this before the first you start the docs site locally.
-
-```sh
-yarn install
-```
-
-### Run the Docs site locally
-
-```sh
-yarn run docs:dev
-```
-
-> Compiles and hot-reloads for development. As (most) content changes are made they show up immediately. Changes to the menus will require quitting and restarting with the command above.
-
-### Running in Production
-
-> Compiles and minifies for production.
-
-```sh
-yarn run docs:build
-```
+---
+home: true
+title: 'Documentação da QW Controle'
+heroImage: /images/qwcontrollogo-black-big.png
+actionText: Começar →
+actionLink: /introduction/introduction.html
+features:
+  - title: Simplicidade
+    details: O que temos que ter sempre em mente é que a percepção das dificuldades não pode mais se dissociar das condições financeiras e administrativas exigidas.
+  - title: Orquestração
+    details: Gostaria de enfatizar que a revolução dos costumes faz parte de um processo de gerenciamento dos modos de operação convencionais.
+  - title: WebHooks
+    details: No mundo atual, a necessidade de renovação processual agrega valor ao estabelecimento das diversas correntes de pensamento.
+footer: © QW Software | 2020-2021 | Todos os direitos reservados.
+---

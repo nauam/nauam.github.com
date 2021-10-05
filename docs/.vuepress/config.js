@@ -6,8 +6,8 @@ const navbarIntroduction = require('./navbar-menus/introduction')
 const navbarIntroductionEn = require('./navbar-menus/en/introduction')
 
 module.exports = {
-    base: `/docs/`,
-    title: '',
+    base: `/QW_Control_Docs/`,
+    title: 'QW Control',
     locales: {
         '/': {
             lang: 'pt-BR',
@@ -18,7 +18,7 @@ module.exports = {
             description: 'Automation and Service Orchestration Platform',
         },
     },
-    head: [['link', { rel: 'icon', href: '/images/logos.png' }]],
+    head: [['link', { rel: 'icon', href: '/images/qwcontrollogo-black-small.png' }]],
     themeConfig: {
         locales: {
             '/': {
@@ -29,8 +29,8 @@ module.exports = {
                         items: navbarIntroduction
                     },
                     {
-                        text: 'Software',
-                        link: 'https://software.com.br'
+                        text: 'QW Software',
+                        link: 'https://qwsoftware.com.br'
                     }
                 ],
                 sidebarDepth: 2,
@@ -45,8 +45,8 @@ module.exports = {
                         items: navbarIntroductionEn
                     },
                     {
-                        text: 'Software',
-                        link: 'https://software.com.br'
+                        text: 'QW Software',
+                        link: 'https://qwsoftware.com.br'
                     }
                 ],
                 sidebarDepth: 2,
