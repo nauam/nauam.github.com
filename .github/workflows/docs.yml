@@ -38,10 +38,12 @@ jobs:
       - name: Install dependencies
       # if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
+        working-directory: ./docs #directory
 
       # run build script
       - name: Build VuePress site
         run: yarn docs:build
+        working-directory: ./docs #directory
 
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
