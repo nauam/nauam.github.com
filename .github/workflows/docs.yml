@@ -22,6 +22,10 @@ jobs:
         with:
           # choose node.js version to use
           node-version: '14'
+        
+      - name: Install Yarn
+        run: npm install --global yarn
+        working-directory: ./docs #directory
 
       # cache node_modules
       - name: Cache dependencies
@@ -33,6 +37,7 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+            
       # install dependencies if the cache did not hit
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
