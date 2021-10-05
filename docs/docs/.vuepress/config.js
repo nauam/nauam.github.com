@@ -1,45 +1,59 @@
+// sidebars
+const sidebarIntroduction = require('./sidebar-menus/introduction')
+const sidebarIntroductionEn = require('./sidebar-menus/en/introduction')
+// navbars
+const navbarIntroduction = require('./navbar-menus/introduction')
+const navbarIntroductionEn = require('./navbar-menus/en/introduction')
+
 module.exports = {
-    base: "/",
-    title: 'Hello, VuePress!',
-    description: 'This is my first VuePress site',
-    head: [
-        [
-            "link",
-            { rel: "icon", href: "/gamepad_game_128px.ico" } //docs/.vuepress/public
-        ]
-    ],
-    markdown: {
-        lineNumbers: true
+    base: `/docs/`,
+    title: '',
+    locales: {
+        '/': {
+            lang: 'pt-BR',
+            description: 'Plataforma de automação e orquestração de serviços',
+        },
+        '/en/': {
+            lang: 'en-US',
+            description: 'Automation and Service Orchestration Platform',
+        },
     },
+    head: [['link', { rel: 'icon', href: '/images/logos.png' }]],
     themeConfig: {
-        nav: [
-            { text: "flow", link: "/pages/flow.md" },
-            { text: "Github", link: "/pages/Github.md" },
-            { text: "VuePress", link: "/pages/VuePress.md" },
-            { text: "TravisCI", link: "/pages/TravisCI.md" },
-            { text: "nauam", link: "https://tsanfer.xyz" }
-        ],
-        sidebarDepth: 2,
-        sidebar: [
-            ["/pages/flow.md", "flow"],
-            ["/pages/Github.md", "Github"],
-            ["/pages/VuePress.md", "VuePress"],
-            ["/pages/TravisCI.md", "TravisCI"]
-        ],
-        //GitHub.
-        repo: "nauam/nauam.github.io/docs",
-        repoLabel: "Github",
-        docsBranch: "master",
-        editLinks: true,
-        editLinkText: "Github",
-        smoothScroll: true,
-        lastUpdated: "Last Updated"
-    },
-    plugins: [
-        "@vuepress/medium-zoom",
-        "@vuepress/nprogress",
-        "@vuepress/back-to-top",
-        "@vuepress/nprogress",
-        "reading-progress"
-    ]
-};
+        locales: {
+            '/': {
+                lang: 'pt-BR',
+                nav: [
+                    {
+                        text: 'Introdução',
+                        items: navbarIntroduction
+                    },
+                    {
+                        text: 'Software',
+                        link: 'https://software.com.br'
+                    }
+                ],
+                sidebarDepth: 2,
+                sidebar: {
+                    '/introduction/': sidebarIntroduction,
+                }
+            },
+            '/en/': {
+                nav: [
+                    {
+                        text: 'Introduction',
+                        items: navbarIntroductionEn
+                    },
+                    {
+                        text: 'Software',
+                        link: 'https://software.com.br'
+                    }
+                ],
+                sidebarDepth: 2,
+                sidebar: {
+                    '/en/introduction/': sidebarIntroductionEn,
+                },
+            },
+        },
+    }
+}
