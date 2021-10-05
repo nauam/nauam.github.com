@@ -36,7 +36,7 @@ jobs:
 
    # install dependencies if the cache did not hit
    - name: Install dependencies
-    if: steps.yarn-cache.outputs.cache-hit != 'true'
+   # if: steps.yarn-cache.outputs.cache-hit != 'true'
     run: yarn --frozen-lockfile
     working-directory: ./docs #directory
 
@@ -51,9 +51,9 @@ jobs:
     uses: crazy-max/ghaction-github-pages@v2
     with:
      # deploy to gh-pages branch
-     target_branch: gh-pages/docs
+     target_branch: gh-pages
      # deploy the default output dir of VuePress
-     build_dir: docs/docs/.vuepress/dist #directory
+     build_dir: docs/.vuepress/dist
     env:
      # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
     github_TOKEN: ${{ secrets.GITHUB_TOKEN }}
