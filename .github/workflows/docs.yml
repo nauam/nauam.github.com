@@ -1,4 +1,4 @@
-name: qwdocs
+name: docs
 
 on:
   # trigger deployment on every push to main branch
@@ -37,6 +37,7 @@ jobs:
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
+        working-directory: ./docs #directory
 
       # run build script
       - name: Build VuePress site
