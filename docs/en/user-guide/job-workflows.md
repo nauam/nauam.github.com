@@ -21,7 +21,7 @@ Users preferring to define _Jobs_ in a text format should refer to the two forma
 
 It is also possible to author _Jobs_ inside the graphical console
 and then export the definition as a file using the
-`rd` CLI tool ([rd](https://qwsoftware.github.io/cli/)), or via the API.
+`rd` CLI tool ([rd](https://google.github.io/cli/)), or via the API.
 
 See [Command Line Tools and API Acccess][1].
 
@@ -383,4 +383,4 @@ _Jobs_ can be exported or imported in XML or Yaml format using the API or the `r
 
 - [Exporting _Jobs_](/en/api/api.md#exporting-_jobs_)
 - [Importing _Jobs_](/en/api/api.md#importing-_jobs_)
-- [RD CLI Tool](https://qwsoftware.github.io/cli/)
+- [RD CLI Tool](https://google.github.io/cli/)

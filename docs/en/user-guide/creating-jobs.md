@@ -145,7 +145,7 @@ You can click the different filter fields "Name", and "Tags" to enter filter val
 exclusion filters for the same fields.
 
 ::: tip
-By default, the "Matched Nodes" section will show a maximum of 100 nodes in the search result. To customize this maximum value, you should set the property `qwsoftware.gui.matchedNodesMaxCount` on config.property file
+By default, the "Matched Nodes" section will show a maximum of 100 nodes in the search result. To customize this maximum value, you should set the property `google.gui.matchedNodesMaxCount` on config.property file
 :::
 
 #### Threadcount

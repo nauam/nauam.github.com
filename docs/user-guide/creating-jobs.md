@@ -16,7 +16,7 @@ Para "Nome do _Job_", digite "info" e para "Grupo", digite "administração/recu
 
 Dê uma descrição ao _job_. É recomendada fornecer uma breve descrição na primeira linha. Crie uma linha em branco e todas as linhas subsequentes podem usar o formato de redução. Você pode ver a linha 3, tem um texto que mostra um link de URL em formato de marcação. Quando a mostra o _job_, essas informações extras podem ser exibidas para o usuário. Rich text é útil para vincular a ferramentas externas ou até mesmo tabelas e gráficos. Qualquer coisa útil para apoiar o usuário do _job_.
 
-Marque a caixa "Enviar para _Nós_". Escolha a opção "Excluir Filtros _Nó_" e digite o nome do seu servidor do QW controle. Isso fará com que o _job_ seja executado apenas nos _nós_ remotos (por exemplo, centos54 e ubuntu).
+Marque a caixa "Enviar para _Nós_". Escolha a opção "Excluir Filtros _Nó_" e digite o nome do seu servidor do google. Isso fará com que o _job_ seja executado apenas nos _nós_ remotos (por exemplo, centos54 e ubuntu).
 
 Digite um script de shell que produza algumas informações (por exemplo, `uname -a`)
 
@@ -127,7 +127,7 @@ Na GUI, a caixa de seleção "Despacho para _nós_" permite que você habilite o
 Você pode clicar nos diferentes campos de filtro "Nome" e "Tags" para inserir valores de filtro para esses campos. Ao atualizar os valores, você verá a seção "_Nós_ correspondentes" atualizada para refletir a lista de _nós_ que corresponderão às entradas. Você pode clicar em "Mais" para ver mais filtros de inclusão disponíveis, e você pode clicar em "Filtros estendidos" para inserir filtros de exclusão para os mesmos campos.
 
 ::: tip
-Por padrão, a seção "_Nós_ correspondentes" mostrará no máximo 100 _nós_ no resultado da pesquisa. Para personalizar este valor máximo, você deve definir a propriedade `qwsoftware.gui.matchedNodesMaxCount` no arquivo config.property
+Por padrão, a seção "_Nós_ correspondentes" mostrará no máximo 100 _nós_ no resultado da pesquisa. Para personalizar este valor máximo, você deve definir a propriedade `google.gui.matchedNodesMaxCount` no arquivo config.property
 :::
 
 #### Threadcount

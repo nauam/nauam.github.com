@@ -1,6 +1,6 @@
 # Introduction
 
-## What is ?
+## What is?
 
 is a job automation and orchestration tool capable of executing in an organized and scheduled way, varied commands (bath, shell) on machines (nodes), through the use of a communication network using different protocols (ssh, FTP(s) ), HTTP(s)).
 
@@ -16,7 +16,7 @@ was designed to accept the reality that heterogeneous infrastructure and tooling
 
 Out of the box, gives you capabilities that would be expensive to develop and maintain in-house: workflow control, scheduling, error-handling, logging, access control, option passing, log filtering, web GUI, REST API (with CLI tools) and integration with external sources for authentication, resource model, and option data.
 
-## Who makes ?
+## Who makes?
 
 is part of [google](https://www.google.com/) along with [other products](https://www.google.com.br/catalogo-de-produtos/).
 

@@ -54,7 +54,7 @@ Mover o mouse sobre qualquer linha no editor de opções revela links para exclu
 
 Clicar no link "editar" abre um novo formulário que permite modificar todos os aspectos dessa opção.
 
-As opções também podem ser definidas como parte de uma definição de _job_ e posteriormente carregadas no servidor . Consulte [job-xml](/user-guide/document-format-reference/job-v20.md) e [job-yaml](/user-guide/document-format-reference/job-yaml-v12.md) e [rd _jobs_](/https://qwsoftware.github.io/cli/commands/#jobs) páginas se você preferir usar uma definição textual de _Job_.
+As opções também podem ser definidas como parte de uma definição de _job_ e posteriormente carregadas no servidor . Consulte [job-xml](/user-guide/document-format-reference/job-v20.md) e [job-yaml](/user-guide/document-format-reference/job-yaml-v12.md) e [rd _jobs_](/https://google.github.io/cli/commands/#jobs) páginas se você preferir usar uma definição textual de _Job_.
 
 ## Definindo uma opção
 
@@ -391,7 +391,7 @@ O caminho deve indicar uma entrada de `password` armazenada na instalação de a
 
 Um modelo de valores de opção pode ser recuperado de uma fonte externa chamada de _provedor de modelo de opção_. Quando `valuesUrl` é especificado para uma opção, o modelo de valores permitidos é recuperado do URL especificado.
 
-Isso é útil em alguns cenários quando o controle QW é usado para coordenar processos que dependem de outros sistemas:
+Isso é útil em alguns cenários quando o google é usado para coordenar processos que dependem de outros sistemas:
 
 - Implantar pacotes ou artefatos produzidos por um servidor de construção ou CI, por exemplo, Jenkins.
   - Uma lista de artefatos de construção recentes do Jenkins pode ser importada como dados de opções, para que um usuário possa escolher um nome de pacote apropriado para implantar em uma lista.
@@ -536,11 +536,11 @@ Propriedades disponíveis para o contexto do _Job_:
 - `description`: descrição do _Job_
 - `project`: nome do projeto
 - `user.name`: Usuário executando o _Job_
-- `qwsoftware.nodename`: Nome do nó do servidor 
-- `qwsoftware.serverUUID`: UUID do nó do servidor (modo de cluster)
-- `qwsoftware.basedir`: Caminho do arquivo do diretório base do (`file://` URLs apenas)
+- `google.nodename`: Nome do nó do servidor 
+- `google.serverUUID`: UUID do nó do servidor (modo de cluster)
+- `google.basedir`: Caminho do arquivo do diretório base do (`file://` URLs apenas)
 
-Além disso, as propriedades `qwsoftware.*` podem ser especificadas sem o prefixo `job.`, por exemplo, `${qwsoftware.basedir}`.
+Além disso, as propriedades `google.*` podem ser especificadas sem o prefixo `job.`, por exemplo, `${google.basedir}`.
 
 Para incluir informações de opção no URL, especifique uma variável do formulário \${option.property}:
 

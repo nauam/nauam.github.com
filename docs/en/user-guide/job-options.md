@@ -53,7 +53,7 @@ Moving the mouse over any row in the options editor reveals links to delete or e
 
 Clicking the "edit" link opens a new form that lets you modify all aspects of that option.
 
-Options can also be defined as part of a _job_ definition and later loaded to the server. See [job-xml](/en/user-guide/document-format-reference/job-v20.md) and [job-yaml](/en/user-guide/document-format-reference/job-yaml-v12.md) ands [rd _jobs_](/en/https://qwsoftware.github.io/cli/commands/#jobs) pages if you prefer using an textual _Job_ definition.
+Options can also be defined as part of a _job_ definition and later loaded to the server. See [job-xml](/en/user-guide/document-format-reference/job-v20.md) and [job-yaml](/en/user-guide/document-format-reference/job-yaml-v12.md) ands [rd _jobs_](/en/https://google.github.io/cli/commands/#jobs) pages if you prefer using an textual _Job_ definition.
 
 ## Defining an option
 
@@ -532,11 +532,11 @@ Properties available for _Job_ context:
 - `description`: _Job_ description
 - `project`: Project name
 - `user.name`: User executing the _job_
-- `qwsoftware.nodename`: Name of the server _node_
-- `qwsoftware.serverUUID`: UUID of the server _node_ (cluster mode)
-- `qwsoftware.basedir`: File path of the base dir (`file://` URLs only)
+- `google.nodename`: Name of the server _node_
+- `google.serverUUID`: UUID of the server _node_ (cluster mode)
+- `google.basedir`: File path of the base dir (`file://` URLs only)
 
-Additionally the `qwsoftware.*` properties can be specified without the `job.` prefix, e.g. `${qwsoftware.basedir}`.
+Additionally the `google.*` properties can be specified without the `job.` prefix, e.g. `${google.basedir}`.
 
 To include Option information in the URL, specify a variable of the form \${option.property}:
 

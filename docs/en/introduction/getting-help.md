@@ -8,4 +8,4 @@ google, through itself or through its partners, provides support to its customer
 
 ## Feedback and Bugs
 
-If you encounter problems with , or if you have questions, comments or ideas about it, please email ([qw@qwsoftware.com.br](mailto:qw@qwsoftware.com.br) ), informing your Name, Telephone, Company and Feedback and/or Bugs.
+If you encounter problems with , or if you have questions, comments or ideas about it, please email ([qw@google.com.br](mailto:qw@google.com.br) ), informing your Name, Telephone, Company and Feedback and/or Bugs.

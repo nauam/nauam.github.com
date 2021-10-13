@@ -21,7 +21,7 @@ Os usuários que preferem definir _Jobs_ em formato de texto devem consultar as 
 
 Também é possível criar _Jobs_ dentro do console gráfico
 e, em seguida, exportar a definição como um arquivo usando o `rd`,
-Ferramenta CLI ([rd](https://qwsoftware.github.io/cli/)), ou via API.
+Ferramenta CLI ([rd](https://google.github.io/cli/)), ou via API.
 
 Consulte [Ferramentas de linha de comando e acesso à API](/user-guide/job-workflows.html#ferramentas-de-linha-de-comando-e-acesso-a-api).
 
@@ -377,4 +377,4 @@ _Jobs_ podem ser exportados ou importados no formato XML ou Yaml usando a API ou
 
 - [Exportando _Jobs_](/api/api.md#export-jobs)
 - [Importing _Jobs_](/api/api.md#importing-jobs)
-- [Ferramenta RD CLI](https://qwsoftware.github.io/wcontrol-cli/)
+- [Ferramenta RD CLI](https://google.github.io/wcontrol-cli/)

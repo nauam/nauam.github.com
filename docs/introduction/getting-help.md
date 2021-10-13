@@ -8,4 +8,4 @@ A google por meio dela própria ou de seus parceiros, fornece suporte aos seus c
 
 ## Feedback e Bugs (Erros)
 
-Se você encontrar problemas com o , ou se tiver perguntas, comentários ou idéias sobre isso, envie um e-mail para o ([qw@qwsoftware.com.br](mailto:qw@qwsoftware.com.br)), informando seu Nome, Telefone, Empresa e o Feedback e/ou Bugs.
+Se você encontrar problemas com o , ou se tiver perguntas, comentários ou idéias sobre isso, envie um e-mail para o ([qw@google.com.br](mailto:qw@google.com.br)), informando seu Nome, Telefone, Empresa e o Feedback e/ou Bugs.
