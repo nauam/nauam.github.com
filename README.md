@@ -1,6 +1,6 @@
-# QW Control Documentation
+# Documentation
 
-QW Control Documentation project.
+Documentation project.
 
 ## Getting starting
 
@@ -30,7 +30,7 @@ Run this before the first you start the docs site locally.
 yarn install
 ```
 
-### Run the QW Control Docs site locally
+### Run the Docs site locally
 
 ```sh
 yarn run docs:dev
@@ -45,3 +45,16 @@ yarn run docs:dev
 ```sh
 yarn run docs:build
 ```
+
+### Running diretory dist in localhost:8080
+
+1. Have Node.js installed in your system.
+
+2. Navigate to the specific path of your file folder
+
+```sh
+npm install http-server -g
+http-server
+```
+
+3. Go to your browser and type localhost:8080. Your Application should run there.

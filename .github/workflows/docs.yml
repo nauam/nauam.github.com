@@ -1,13 +1,13 @@
-name: qwdocs
+name: docs
 
 on:
   # trigger deployment on every push to main branch
   push:
-    branches: [main]
+    branches: [vuepress]
   # trigger deployment manually
   workflow_dispatch:
 
-jobs:
+s:
   docs:
     runs-on: ubuntu-latest
 
@@ -36,7 +36,7 @@ jobs:
 
       # install dependencies if the cache did not hit
       - name: Install dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
+      # if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
 
       # run build script
@@ -49,7 +49,7 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2
         with:
           # deploy to gh-pages branch
-          target_branch: gh-pages
+          target_branch: gh-pages-docs
           # deploy the default output dir of VuePress
           build_dir: docs/.vuepress/dist
         env:

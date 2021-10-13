@@ -1,15 +1,15 @@
 ---
 home: true
-title: 'Documentação da QW Controle'
-heroImage: /images/qwcontrollogo-black-big.png
+title: 'Documentação'
+heroImage: /images/logo-black.png
 actionText: Começar →
 actionLink: /introduction/introduction.html
 features:
-  - title: Simplicidade
-    details: O que temos que ter sempre em mente é que a percepção das dificuldades não pode mais se dissociar das condições financeiras e administrativas exigidas.
-  - title: Orquestração
-    details: Gostaria de enfatizar que a revolução dos costumes faz parte de um processo de gerenciamento dos modos de operação convencionais.
-  - title: WebHooks
-    details: No mundo atual, a necessidade de renovação processual agrega valor ao estabelecimento das diversas correntes de pensamento.
-footer: © QW Software | 2020-2021 | Todos os direitos reservados.
+  - title: Modelo 
+    details: Por conseguinte, o novo modelo estrutural aqui preconizado facilita a criação das novas proposições.
+  - title: Informações
+    details: Do mesmo modo, a constante divulgação das informações representa uma abertura para a melhoria dos modos de operação convencionais.
+  - title: Empenho
+    details: O empenho em analisar a revolução dos costumes auxilia a preparação e a composição das direções preferenciais no sentido do progresso.
+footer: © GitHub | 2020-2021 | Todos os direitos reservados.
 ---
