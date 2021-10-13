@@ -1,7 +1,7 @@
 ---
 home: true
 title: 'Documentação'
-heroImage: /images/logo-black-big.png
+heroImage: /images/logo-black.png
 actionText: Começar →
 actionLink: /introduction/introduction.html
 features:

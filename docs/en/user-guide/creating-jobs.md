@@ -262,7 +262,7 @@ Similarly, to Copy a Job definition to a new Job, press the "duplicate to a new 
 Job definitions created inside the graphical console can be
 exported to XML or YAML file formats and be used for later import.
 
-Two methods exist to retrieve the Job definitions: via QW Control's
+Two methods exist to retrieve the Job definitions: via 's
 graphical interface, and via the [rd-jobs] shell tool.
 
 In the Job definition tab, locate the "Download Definition" menu button.

@@ -70,7 +70,7 @@ We do not require that this field is compliant with the UUID format but be caref
 
 ## Listing and filtering Jobs
 
-All Job activity begins on the main "Jobs" page inside QW Control. After
+All Job activity begins on the main "Jobs" page inside . After
 logging in, press the "Jobs" tab in the top navigation bar and any
 Jobs you are authorized to see will be displayed.
 

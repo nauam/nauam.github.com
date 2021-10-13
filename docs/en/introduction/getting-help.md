@@ -1,6 +1,6 @@
 # Getting Help
 
-This documentation is the first stop for help or understanding of QW Control.  For additional support options check out the list below.
+This documentation is the first stop for help or understanding of .  For additional support options check out the list below.
 
 ## Enterprise Support
 
@@ -8,4 +8,4 @@ google, through itself or through its partners, provides support to its customer
 
 ## Feedback and Bugs
 
-If you encounter problems with QW Control, or if you have questions, comments or ideas about it, please email ([qw@qwsoftware.com.br](mailto:qw@qwsoftware.com.br) ), informing your Name, Telephone, Company and Feedback and/or Bugs.
+If you encounter problems with , or if you have questions, comments or ideas about it, please email ([qw@qwsoftware.com.br](mailto:qw@qwsoftware.com.br) ), informing your Name, Telephone, Company and Feedback and/or Bugs.

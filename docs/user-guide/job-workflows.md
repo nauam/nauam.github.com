@@ -102,7 +102,7 @@ Novos passos são sempre adicionados ao final da sequência. Ver
 [Reordenando _etapas_](/# reordenando-passos)
 para obter instruções sobre como mover passos para uma nova ordem.
 
-Cada passo pode ter uma "Descrição" para dar a ele um nome ou descrição mais lógico a ser exibido na GUI da QW Control.
+Cada passo pode ter uma "Descrição" para dar a ele um nome ou descrição mais lógico a ser exibido na GUI da .
 
 As próximas seções descrevem a especificação de cada tipo de
 workflow passo.

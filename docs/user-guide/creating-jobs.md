@@ -116,7 +116,7 @@ E uma das três ações pode ser realizada se o limite for excedido:
 
 ### Despachando e filtrando _Nó_
 
-Ao criar um _job_, você pode escolher entre executar o _job_ apenas localmente (no servidor QW Control) ou despachá-lo para vários _nós_ (incluindo o servidor QW Control, se desejar).
+Ao criar um _job_, você pode escolher entre executar o _job_ apenas localmente (no servidor ) ou despachá-lo para vários _nós_ (incluindo o servidor , se desejar).
 
 Na GUI, a caixa de seleção "Despacho para _nós_" permite que você habilite o despacho de _nó_. Quando você clica nesta caixa, é apresentada a interface de filtro do _Nó_:
 

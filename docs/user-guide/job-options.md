@@ -54,7 +54,7 @@ Mover o mouse sobre qualquer linha no editor de opções revela links para exclu
 
 Clicar no link "editar" abre um novo formulário que permite modificar todos os aspectos dessa opção.
 
-As opções também podem ser definidas como parte de uma definição de _job_ e posteriormente carregadas no servidor QW Control. Consulte [job-xml](/user-guide/document-format-reference/job-v20.md) e [job-yaml](/user-guide/document-format-reference/job-yaml-v12.md) e [rd _jobs_](/https://qwsoftware.github.io/cli/commands/#jobs) páginas se você preferir usar uma definição textual de _Job_.
+As opções também podem ser definidas como parte de uma definição de _job_ e posteriormente carregadas no servidor . Consulte [job-xml](/user-guide/document-format-reference/job-v20.md) e [job-yaml](/user-guide/document-format-reference/job-yaml-v12.md) e [rd _jobs_](/https://qwsoftware.github.io/cli/commands/#jobs) páginas se você preferir usar uma definição textual de _Job_.
 
 ## Definindo uma opção
 
@@ -351,7 +351,7 @@ Ao definir um [passo de Referência de _Job_ em um fluxo de trabalho](/user-guid
 
 Essa restrição é para manter o projeto de segurança dessas opções:
 
-1. As opções seguras não devem ser armazenadas no banco de dados de execução do QW Control, portanto, não devem ser usadas como valores de opção simples.
+1. As opções seguras não devem ser armazenadas no banco de dados de execução do , portanto, não devem ser usadas como valores de opção simples.
 2. As opções de autenticação remota segura não devem ser usadas em scripts/comandos, portanto, não devem ser usadas como valores de opção segura ou simples.
 
 Como exemplo, aqui estão dois _jobs_, _Job_ A e _Job_ B, que definem algumas opções:
@@ -407,7 +407,7 @@ Os provedores de modelo de opção são configurados por opção (onde um _Job_ 
 ### Requisitos
 
 1. Os dados do modelo de opções devem ser [formatados em JSON](http://www.json.org).
-2. Deve estar acessível via HTTP(S) ou no disco local para o servidor do QW Control.
+2. Deve estar acessível via HTTP(S) ou no disco local para o servidor do .
 3. Deve estar em uma das duas estruturas JSON, _todos_:
    - Uma matriz de valores de string
    - OU, uma matriz de mapas, cada um com duas entradas, `name` e `value`.
@@ -416,7 +416,7 @@ Os provedores de modelo de opção são configurados por opção (onde um _Job_ 
 
 ### Configuração
 
-Cada entrada de opção para um _Job_ pode ser configurada para obter o conjunto de valores possíveis de um URL remoto. Se você está criando jobs por meio do [formato de arquivo job.xml](/user-guide/document-format-reference/job-v20.md#opcao), simplesmente adicione um atributo `valuesUrl` para a` <option> `. Se você estiver modificando o _Job_ na interface web do QW Control, poderá inserir um URL no campo "URL remoto" para a opção.
+Cada entrada de opção para um _Job_ pode ser configurada para obter o conjunto de valores possíveis de um URL remoto. Se você está criando jobs por meio do [formato de arquivo job.xml](/user-guide/document-format-reference/job-v20.md#opcao), simplesmente adicione um atributo `valuesUrl` para a` <option> `. Se você estiver modificando o _Job_ na interface web do , poderá inserir um URL no campo "URL remoto" para a opção.
 por exemplo:
 
 ```html
@@ -536,7 +536,7 @@ Propriedades disponíveis para o contexto do _Job_:
 - `description`: descrição do _Job_
 - `project`: nome do projeto
 - `user.name`: Usuário executando o _Job_
-- `qwsoftware.nodename`: Nome do nó do servidor QW Control
+- `qwsoftware.nodename`: Nome do nó do servidor 
 - `qwsoftware.serverUUID`: UUID do nó do servidor (modo de cluster)
 - `qwsoftware.basedir`: Caminho do arquivo do diretório base do (`file://` URLs apenas)
 

@@ -1,6 +1,6 @@
-# Introdução ao QW Control
+# Introdução ao 
 
-## O que é QW Control?
+## O que é ?
 
 O é uma ferramenta de automação e orquestração de jobs capaz de executar de forma organizada e agendada, comandos variados (bath, shell) em máquinas (nós), através do uso da rede de comunicação usando protocolos diversos (ssh, FTP(s), HTTP(s)).
 
@@ -10,17 +10,17 @@ Quando usado para o trabalho de operações gerais, o ajudará a aliviar o traba
 
 Isso significa que podemos controlar por exemplo desde um simples backup de banco de dados, transferências de arquivos entre servidores, até trabalhos complexos de ETL e automação robótica de processos. Experimente usar nossos plugins ou faça você mesmo, em python ou java, o seu próprio para integração com sistemas legados.
 
-Com o QW Control, é simples e fácil criar fluxos de trabalho (chamados de "jobs") a partir de qualquer uma de suas ferramentas ou scripts existentes.  Acione os jobs do a partir de Web GUI, API, CLI ou por agendamento. Os recursos de controle de acesso do tornam mais fácil delegar com segurança o controle de tarefas àqueles que estão tradicionalmente fora das operações.
+Com o , é simples e fácil criar fluxos de trabalho (chamados de "jobs") a partir de qualquer uma de suas ferramentas ou scripts existentes.  Acione os jobs do a partir de Web GUI, API, CLI ou por agendamento. Os recursos de controle de acesso do tornam mais fácil delegar com segurança o controle de tarefas àqueles que estão tradicionalmente fora das operações.
 
-O foi projetado para aceitar a realidade de que infraestrutura e ferramentas heterogêneas são um fato da vida em qualquer organização de tamanho considerável. É por isso que o não o faz substituir os scripts, comandos ou ferramentas que você usa hoje. Você usa o para executar fluxos de trabalho em sua automação existente (por exemplo, Ansible, Puppet, Chef, Jenkins, Docker, Kubernetes, ferramentas legadas e todos os seus scripts/APIs personalizados) ou automatizar rapidamente procedimentos manuais anteriores. Com o QW Control, você pode reutilizar as habilidades de automação que já possui e adicionar novas conforme necessário.
+O foi projetado para aceitar a realidade de que infraestrutura e ferramentas heterogêneas são um fato da vida em qualquer organização de tamanho considerável. É por isso que o não o faz substituir os scripts, comandos ou ferramentas que você usa hoje. Você usa o para executar fluxos de trabalho em sua automação existente (por exemplo, Ansible, Puppet, Chef, Jenkins, Docker, Kubernetes, ferramentas legadas e todos os seus scripts/APIs personalizados) ou automatizar rapidamente procedimentos manuais anteriores. Com o , você pode reutilizar as habilidades de automação que já possui e adicionar novas conforme necessário.
 
 Pronto para usar, o oferece recursos que seriam caros para desenvolver e manter internamente: controle de fluxo de trabalho, agendamento, tratamento de erros, registro, controle de acesso, passagem de opção, filtragem de registro, interface web, API REST (com CLI ferramentas) e integração com fontes externas para autenticação, modelo de recursos e dados de opções.
 
-## Quem faz o QW Control?
+## Quem faz o ?
 
-O faz parte da [google](https://www.qwsoftware.com/) junto de [outros produtos](https://www.qwsoftware.com.br/catalogo-de-produtos/).
+O faz parte da [google](https://www.google.com/) junto de [outros produtos](https://www.google.com.br/catalogo-de-produtos/).
 
-## Destaques do recurso do QW Control
+## Destaques do recurso do 
 
 - Execução de comando distribuído
 - Fluxo de trabalho (incluindo passagem de opções, condicionais, tratamento de erros e várias estratégias de fluxo de trabalho)

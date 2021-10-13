@@ -40,7 +40,7 @@ Quando criado, cada novo _Job_ receberá um identificador universal exclusivo (U
 
 Você pode usar o UUID para certificar-se de que, ao renomear ou alterar o grupo de seu _Job_ na definição de _Job_, ele modificará o _Job_ correto no servidor.
 
-O UUID também é útil ao portar definições de _Job_ entre instâncias do QW Control.
+O UUID também é útil ao portar definições de _Job_ entre instâncias do .
 
 ::: warning AVISO
 Não exigimos que este campo seja compatível com o formato UUID, mas tome cuidado ao criar UUIDs personalizados, pois isso pode levar a inconsistências no carregamento do _Job_.
@@ -48,7 +48,7 @@ Não exigimos que este campo seja compatível com o formato UUID, mas tome cuida
 
 ## Listagem e filtragem de _Jobs_
 
-Todas as atividades de _Job_ começam na página principal _Jobs_ dentro do QW Control. Após o login, pressione a guia _Jobs_ na barra de navegação superior e todos os _Jobs_ que você está autorizado a ver serão exibidos.
+Todas as atividades de _Job_ começam na página principal _Jobs_ dentro do . Após o login, pressione a guia _Jobs_ na barra de navegação superior e todos os _Jobs_ que você está autorizado a ver serão exibidos.
 
 Se os _Jobs_ foram definidos dentro de grupos, você verá a lista agrupada em uma estrutura semelhante a uma pasta. Essas pastas representam os grupos de _Job_ descritos anteriormente. Você pode navegar nessas pastas pressionando o ícone da pasta para revelar seu conteúdo.
 
