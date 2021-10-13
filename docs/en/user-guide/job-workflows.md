@@ -8,7 +8,7 @@ detail from a _Job_ listing or within the _Job_ editor form.
 
 ## Workflow definition
 
-Workflows can be defined within the QW Control graphical console or as an
+Workflows can be defined within the graphical console or as an
 XML or YAML document that is loaded to the server.
 
 The graphical console provides an authoring environment where _steps_
@@ -21,7 +21,7 @@ Users preferring to define _Jobs_ in a text format should refer to the two forma
 
 It is also possible to author _Jobs_ inside the graphical console
 and then export the definition as a file using the
-`rd` CLI tool ([rd](https://qwsoftware.github.io/qwcontrol-cli/)), or via the API.
+`rd` CLI tool ([rd](https://qwsoftware.github.io/cli/)), or via the API.
 
 See [Command Line Tools and API Acccess][1].
 
@@ -107,7 +107,7 @@ New _steps_ are always added to the end of the sequence. See
 [Reordering _steps_](/en/#reordering-_steps_)
 for directions on moving _steps_ into a new order.
 
-Each _step_ can have a "Description" to give it a more logical name or description to be displayed in the QW Control GUI.
+Each _step_ can have a "Description" to give it a more logical name or description to be displayed in the GUI.
 
 The next several sections describe the specification of each kind of
 workflow _step_.
@@ -371,7 +371,7 @@ The Workflow Strategy used in the Workflow governs when _steps_ execute: A seque
 
 ### Data Capture Log Filter Plugins
 
-QW Control offers two different data capture Log Filter plugins. The first, Key Value Data, captures simple Key/Value data using a simple text format. The second, Multiline Regex Data Capture, captures multiline regex key/value data using a simple text format. The data capture Log Filter plugins allow users to define and utilize data variables across numerous _job_ _steps_.
+offers two different data capture Log Filter plugins. The first, Key Value Data, captures simple Key/Value data using a simple text format. The second, Multiline Regex Data Capture, captures multiline regex key/value data using a simple text format. The data capture Log Filter plugins allow users to define and utilize data variables across numerous _job_ _steps_.
 
 For more information on Key Value data, see [Key Value Data](/en/user-guide/log-filters/key-value-data.md).
 
@@ -381,6 +381,6 @@ For more information on Key Value data, see [Multiline Regex Capture](/en/user-g
 
 _Jobs_ can be exported or imported in XML or Yaml format using the API or the `rd` CLI tool.
 
-- [Exporting _Jobs_](/en/api/qwcontrol-api.md#exporting-_jobs_)
-- [Importing _Jobs_](/en/api/qwcontrol-api.md#importing-_jobs_)
-- [RD CLI Tool](https://qwsoftware.github.io/qwcontrol-cli/)
+- [Exporting _Jobs_](/en/api/api.md#exporting-_jobs_)
+- [Importing _Jobs_](/en/api/api.md#importing-_jobs_)
+- [RD CLI Tool](https://qwsoftware.github.io/cli/)

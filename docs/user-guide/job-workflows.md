@@ -8,7 +8,7 @@ em uma lista de _Job_ ou no formulário do editor de _Job_.
 
 ## Definição de fluxo de trabalho
 
-Os fluxos de trabalho podem ser definidos no console gráfico da QW Control ou como um
+Os fluxos de trabalho podem ser definidos no console gráfico da ou como um
 Documento XML ou YAML que é carregado no servidor.
 
 O console gráfico fornece um ambiente de autoria onde passos
@@ -21,7 +21,7 @@ Os usuários que preferem definir _Jobs_ em formato de texto devem consultar as 
 
 Também é possível criar _Jobs_ dentro do console gráfico
 e, em seguida, exportar a definição como um arquivo usando o `rd`,
-Ferramenta CLI ([rd](https://qwsoftware.github.io/qwcontrol-cli/)), ou via API.
+Ferramenta CLI ([rd](https://qwsoftware.github.io/cli/)), ou via API.
 
 Consulte [Ferramentas de linha de comando e acesso à API](/user-guide/job-workflows.html#ferramentas-de-linha-de-comando-e-acesso-a-api).
 
@@ -365,7 +365,7 @@ A Estratégia de Fluxo de Trabalho usada no Fluxo de Trabalho rege quando passos
 
 ### Plugins de filtro de registro de captura de dados
 
-O QW Control oferece dois plug-ins de filtro de registro de captura de dados diferentes. O primeiro, Dados de valor-chave, captura dados simples de chave/valor usando um formato de texto simples. O segundo, Multiline Regex Data Capture, captura dados de chave/valor regex multilinha usando um formato de texto simples. Os plug-ins do filtro de registro de captura de dados permitem que os usuários definam e utilizem variáveis ​​de dados em vários _job_ passos.
+O oferece dois plug-ins de filtro de registro de captura de dados diferentes. O primeiro, Dados de valor-chave, captura dados simples de chave/valor usando um formato de texto simples. O segundo, Multiline Regex Data Capture, captura dados de chave/valor regex multilinha usando um formato de texto simples. Os plug-ins do filtro de registro de captura de dados permitem que os usuários definam e utilizem variáveis ​​de dados em vários _job_ passos.
 
 Para obter mais informações sobre dados de valor-chave, consulte [Dados de valor-chave](/user-guide/log-filters/key-value-data.md).
 
@@ -375,6 +375,6 @@ Para obter mais informações sobre dados de valor-chave, consulte [Multiline Re
 
 _Jobs_ podem ser exportados ou importados no formato XML ou Yaml usando a API ou a ferramenta CLI `rd`.
 
-- [Exportando _Jobs_](/api/qwcontrol-api.md#export-jobs)
-- [Importing _Jobs_](/api/qwcontrol-api.md#importing-jobs)
+- [Exportando _Jobs_](/api/api.md#export-jobs)
+- [Importing _Jobs_](/api/api.md#importing-jobs)
 - [Ferramenta RD CLI](https://qwsoftware.github.io/wcontrol-cli/)

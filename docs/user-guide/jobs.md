@@ -15,7 +15,7 @@ os passos do processo, uma expressão de filtro que corresponde aos _Nós_ onde 
 
 O acesso ao _Job_ é regido por uma política de controle de acesso que você define, declarando como os usuários recebem privilégios para ler, criar, editar, executar e eliminar os _Jobs_.
 
-O QW Control permite organizar e executar tarefas e observar o andamento à medida que a tarefa é executada. Você pode ver uma lista dos _Jobs_ atualmente em execução ou fazer uma busca detalhada para ver a saída das etapas de execução individuais. As execuções de _Jobs_ também podem ser abortadas se precisarem ser interrompidas.
+O permite organizar e executar tarefas e observar o andamento à medida que a tarefa é executada. Você pode ver uma lista dos _Jobs_ atualmente em execução ou fazer uma busca detalhada para ver a saída das etapas de execução individuais. As execuções de _Jobs_ também podem ser abortadas se precisarem ser interrompidas.
 
 Cada execução de _Job_ é armazenada e contém informações sobre os _Nós_ onde os passos foram executados, sucesso e duração de cada passo. O resultado da execução do _Job_ pode ser baixado, encaminhado para um armazenamento de log externo ou enviado como parte de uma notificação por e-mail ou outros.
 
@@ -27,7 +27,7 @@ Se você quiser pular, vá direto para
 ## Grupos de _Job_
 
 Como muitos _Jobs_  se acumulam com o tempo, é útil organizar os _Jobs_
- em grupos. Um grupo é um conjunto lógico de _Jobs_ e um grupo de _Job_ pode existir dentro de outro. O QW Control exibe listas de _Job_ como um conjunto de pastas correspondentes à estrutura de grupo que seus  _Jobs_ definem.
+ em grupos. Um grupo é um conjunto lógico de _Jobs_ e um grupo de _Job_ pode existir dentro de outro. O exibe listas de _Job_ como um conjunto de pastas correspondentes à estrutura de grupo que seus  _Jobs_ definem.
 
 Para criar um novo grupo de _Job_, crie um novo _Job_ e digite o nome do grupo no qual o _Job_ deve ser armazenado. Depois de criar o _Job_, o grupo será criado e pode ser selecionado na IU para criação de _Job_ futuro.
 

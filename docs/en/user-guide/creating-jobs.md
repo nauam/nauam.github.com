@@ -20,10 +20,10 @@ Providing a description will become helpful to other users to understand the int
 
 Give the job a description. It's best practice to give a short description on the first line.
 Create one blank line and all subsequent lines can use markdown format.
-You can see line 3, has text that show a URL link in markdown format. When QW Control shows the job, this extra information can be displayed to the user. Rich text is useful to link to external tools or even charts and graphs. Anything useful to support the job user.
+You can see line 3, has text that show a URL link in markdown format. When shows the job, this extra information can be displayed to the user. Rich text is useful to link to external tools or even charts and graphs. Anything useful to support the job user.
 
 Check the box for "Dispatch to Nodes".
-Choose the "Node Exclude Filters" and enter the name of your QW Control server.
+Choose the "Node Exclude Filters" and enter the name of your server.
 This will cause the job to run on just the remote Nodes (eg., centos54 and ubuntu).
 
 Type in shell script that produces some information (eg, `uname -a`)
@@ -133,7 +133,7 @@ And one of three actions can be performed if the limit is exceeded:
 
 ### Node dispatching and filtering
 
-When you create a job you can choose between either running the job only locally (on the QW Control server), or dispatching it to multiple nodes (including the QW Control server if you want).
+When you create a job you can choose between either running the job only locally (on the server), or dispatching it to multiple nodes (including the server if you want).
 
 In the GUI, the "Dispatch to Nodes" checkbox lets you enable node dispatching. When you click this box you are presented with the Node Filtering interface:
 
@@ -145,7 +145,7 @@ You can click the different filter fields "Name", and "Tags" to enter filter val
 exclusion filters for the same fields.
 
 ::: tip
-By default, the "Matched Nodes" section will show a maximum of 100 nodes in the search result. To customize this maximum value, you should set the property `qwsoftware.gui.matchedNodesMaxCount` on qwcontrol-config.property file
+By default, the "Matched Nodes" section will show a maximum of 100 nodes in the search result. To customize this maximum value, you should set the property `qwsoftware.gui.matchedNodesMaxCount` on config.property file
 :::
 
 #### Threadcount
@@ -259,7 +259,7 @@ Similarly, to Copy a Job definition to a new Job, press the "duplicate to a new 
 
 ## Exporting Job definitions
 
-Job definitions created inside the QW Control graphical console can be
+Job definitions created inside the graphical console can be
 exported to XML or YAML file formats and be used for later import.
 
 Two methods exist to retrieve the Job definitions: via QW Control's

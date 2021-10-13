@@ -4,7 +4,7 @@ O _Jobs_ pode ser configurado para solicitar a entrada de um usuário, definindo
 
 Os usuários fornecem opções digitando um valor ou selecionando em um menu de opções. Um padrão de validação garante que a entrada está em conformidade com o requisito da opção. Uma vez escolhido, o valor escolhido para a opção fica acessível aos comandos chamados pelo _Job_.
 
-As escolhas de opções podem ser modeladas como um conjunto estático ou de uma fonte dinâmica. As escolhas estáticas podem ser modeladas como uma lista separada por vírgulas na definição de _job_. Quando os valores de opção devem ser dinâmicos, o _Job_ pode ser definido para usar uma URL para recuperar dados de opção de uma fonte externa. Habilitar _Jobs_ para acessar fontes externas via URL abre a porta para integrar o QW Control com outras ferramentas e incorporar seus dados em _Job_ workflows.
+As escolhas de opções podem ser modeladas como um conjunto estático ou de uma fonte dinâmica. As escolhas estáticas podem ser modeladas como uma lista separada por vírgulas na definição de _job_. Quando os valores de opção devem ser dinâmicos, o _Job_ pode ser definido para usar uma URL para recuperar dados de opção de uma fonte externa. Habilitar _Jobs_ para acessar fontes externas via URL abre a porta para integrar o com outras ferramentas e incorporar seus dados em _Job_ workflows.
 
 ## Solicitando ao usuário
 
@@ -54,7 +54,7 @@ Mover o mouse sobre qualquer linha no editor de opções revela links para exclu
 
 Clicar no link "editar" abre um novo formulário que permite modificar todos os aspectos dessa opção.
 
-As opções também podem ser definidas como parte de uma definição de _job_ e posteriormente carregadas no servidor QW Control. Consulte [job-xml](/user-guide/document-format-reference/job-v20.md) e [job-yaml](/user-guide/document-format-reference/job-yaml-v12.md) e [rd _jobs_](/https://qwsoftware.github.io/qwcontrol-cli/commands/#jobs) páginas se você preferir usar uma definição textual de _Job_.
+As opções também podem ser definidas como parte de uma definição de _job_ e posteriormente carregadas no servidor QW Control. Consulte [job-xml](/user-guide/document-format-reference/job-v20.md) e [job-yaml](/user-guide/document-format-reference/job-yaml-v12.md) e [rd _jobs_](/https://qwsoftware.github.io/cli/commands/#jobs) páginas se você preferir usar uma definição textual de _Job_.
 
 ## Definindo uma opção
 
@@ -92,7 +92,7 @@ Os valores permitidos fornecem um modelo de escolhas possíveis. Isso pode conte
 
 ### Restrições
 
-Define os critérios sobre os quais a entrada deve ser aceita ou apresentada. As escolhas de opções podem ser controladas usando a restrição "Enforced from values". Quando definido como "true", o QW Control apresentará apenas um menu pop-up. Se definido como "false", um campo de texto também será apresentado. Insira uma expressão regular no campo "Match Regular Expression" que o _Job_ avaliará quando executado.
+Define os critérios sobre os quais a entrada deve ser aceita ou apresentada. As escolhas de opções podem ser controladas usando a restrição "Enforced from values". Quando definido como "true", o apresentará apenas um menu pop-up. Se definido como "false", um campo de texto também será apresentado. Insira uma expressão regular no campo "Match Regular Expression" que o _Job_ avaliará quando executado.
 
 ### Requerimento
 
@@ -323,7 +323,7 @@ As opções seguras não podem ser usadas como entrada de autenticação para ex
 
 ### Nota importante
 
-Os valores da opção "segura" não são armazenados no banco de dados do QW Control quando o _Job_ é executado, mas o valor inserido
+Os valores da opção "segura" não são armazenados no banco de dados do quando o _Job_ é executado, mas o valor inserido
 é exposto para uso em scripts e comandos. Certifique-se de reconhecer essas implicações de segurança antes de usá-los. As opções seguras estão disponíveis para uso em scripts e comandos como qualquer outro valor de opção:
 
 - como argumentos de texto simples usando `${option.name}`
@@ -477,7 +477,7 @@ Lista de valores de nomes com seleções padrão:
 
 ### Parâmetros de conexão de URL
 
-Você pode configurar tempos limites globalmente conforme descrito em [Configuração - Parâmetros de conexão da URL da opção remota do _Job_](/administration/configuration/config-file-reference.md#qwcontrol-config.properties).
+Você pode configurar tempos limites globalmente conforme descrito em [Configuração - Parâmetros de conexão da URL da opção remota do _Job_](/administration/configuration/config-file-reference.md#config.properties).
 
 Você também pode especificar esses parâmetros de conexão por URL:
 
@@ -504,7 +504,7 @@ As opções em cascata permitem que o URL de valores remotos de uma opção inco
 
 Isso fornece um mecanismo para declarar conjuntos hierárquicos ou dependentes de valores de opção.
 
-Por exemplo. se você quiser uma opção para escolher um "repositório" e outra opção para selecionar um "ramo" específico dentro desse repositório. Defina seu provedor de opções para responder corretamente com base no valor de "repositório" selecionado e defina sua URL de opção remota para incluir uma referência ao valor de opção de "repositório". A GUI do QW Control irá então recarregar os valores JSON da URL remota e inserir o valor correto da opção "repositório" ao carregar os valores da opção "branch". Se o usuário alterar o repositório selecionado, os valores do branch serão atualizados automaticamente.
+Por exemplo. se você quiser uma opção para escolher um "repositório" e outra opção para selecionar um "ramo" específico dentro desse repositório. Defina seu provedor de opções para responder corretamente com base no valor de "repositório" selecionado e defina sua URL de opção remota para incluir uma referência ao valor de opção de "repositório". A GUI do irá então recarregar os valores JSON da URL remota e inserir o valor correto da opção "repositório" ao carregar os valores da opção "branch". Se o usuário alterar o repositório selecionado, os valores do branch serão atualizados automaticamente.
 
 Você pode declarar a dependência de uma opção para outra incorporando referências de propriedade na URL de valores remotos. A referência da propriedade tem o formato `${option.[name].value}`. Se você declarar uma opção com uma URL de valores remotos como `http://server/options?option2=${option.option2.value}`, então essa opção dependerá do valor da opção "option2".
 
@@ -537,8 +537,8 @@ Propriedades disponíveis para o contexto do _Job_:
 - `project`: nome do projeto
 - `user.name`: Usuário executando o _Job_
 - `qwsoftware.nodename`: Nome do nó do servidor QW Control
-- `qwsoftware.serverUUID`: UUID do nó do servidor QW Control (modo de cluster)
-- `qwsoftware.basedir`: Caminho do arquivo do diretório base do QW Control (`file://` URLs apenas)
+- `qwsoftware.serverUUID`: UUID do nó do servidor (modo de cluster)
+- `qwsoftware.basedir`: Caminho do arquivo do diretório base do (`file://` URLs apenas)
 
 Além disso, as propriedades `qwsoftware.*` podem ser especificadas sem o prefixo `job.`, por exemplo, `${qwsoftware.basedir}`.
 
@@ -591,7 +591,7 @@ Formato de parâmetros de consulta para opções:
 Por exemplo, se o URL para _Job_ for:
 
 ```http
-http://qwcontrol:4440/project/MyProject/job/show/ab698597-9753-4e98-bdab-90ebf395b0d0
+http://localhost:4440/project/MyProject/job/show/ab698597-9753-4e98-bdab-90ebf395b0d0
 ```
 
 Em seguida, você pode preencher previamente os valores de `myopt1` e `myotheropt` anexando-o ao URL:
@@ -603,7 +603,7 @@ Em seguida, você pode preencher previamente os valores de `myopt1` e `myotherop
 O resultado seria:
 
 ```http
-http://qwcontrol:4440/project/MyProject/job/show/ab698597-9753-4e98-bdab-90ebf395b0d0?opt.myopt1=some+value&opt.myotheropt=another+value
+http://localhost:4440/project/MyProject/job/show/ab698597-9753-4e98-bdab-90ebf395b0d0?opt.myopt1=some+value&opt.myotheropt=another+value
 ```
 
 Observação: certifique-se de escapar adequadamente das strings para os valores das opções e, se necessário, também para os nomes das opções.

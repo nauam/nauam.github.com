@@ -24,7 +24,7 @@ Job access is governed by an access control
 policy you define declaring how users are given privileges to
 read, create, edit, run and kill Jobs.
 
-QW Control lets you organize and execute Jobs and observe the progress as
+lets you organize and execute Jobs and observe the progress as
 the Job is running. You can view a list of the currently running Jobs
 or drill down to see the output of individual executing steps.
 Job executions can also be aborted if they need to be stopped.
@@ -46,7 +46,7 @@ If you want to skip ahead, you can go straight to
 
 As many jobs will accumulate over time, it is useful to organize Jobs
 into groups. A group is a logical set of jobs, and one job group can
-exist inside another. QW Control displays job lists as a set of folders
+exist inside another. displays job lists as a set of folders
 corresponding to the group structure your jobs define.
 
 To create a new job group, create a new job and type in the name of the group the job should be stored in. After creating the job, the group will be created and can be selected in UI for future job creation.
@@ -62,7 +62,7 @@ When created, each new job will be assigned a unique universal identifier (UUID)
 You can use the UUID to make sure that when you rename or change the group for
 your job in your job definition, it will modify the correct job in the server.
 
-The UUID is also useful when porting Job definitions between QW Control instances.
+The UUID is also useful when porting Job definitions between instances.
 
 ::: warning
 We do not require that this field is compliant with the UUID format but be careful creating custom UUIDs as this can lead to inconsistencies in job loading.

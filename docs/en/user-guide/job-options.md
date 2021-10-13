@@ -4,7 +4,7 @@ The _Jobs_ can be configured to prompt a user for input by defining one or more 
 
 Users supply options by typing in a value or selecting from a menu of choices. A validation pattern ensures input complies to the option requirement. Once chosen, the value chosen for the option is accessible to the commands called by the _Job_.
 
-Option choices can be modeled as a static set or from a dynamic source. Static choices can be modeled as a comma separated list in the _job_ definition. When option values must be dynamic, the _Job_ can be defined to use a URL to retrieve option data from an external source. Enabling _Jobs_ to access external sources via URL opens the door to integrating QW Control with other tools and incorporating their data into _Job_ workflows.
+Option choices can be modeled as a static set or from a dynamic source. Static choices can be modeled as a comma separated list in the _job_ definition. When option values must be dynamic, the _Job_ can be defined to use a URL to retrieve option data from an external source. Enabling _Jobs_ to access external sources via URL opens the door to integrating with other tools and incorporating their data into _Job_ workflows.
 
 ## Prompting the user
 
@@ -53,7 +53,7 @@ Moving the mouse over any row in the options editor reveals links to delete or e
 
 Clicking the "edit" link opens a new form that lets you modify all aspects of that option.
 
-Options can also be defined as part of a _job_ definition and later loaded to the QW Control server. See [job-xml](/en/user-guide/document-format-reference/job-v20.md) and [job-yaml](/en/user-guide/document-format-reference/job-yaml-v12.md) ands [rd _jobs_](/en/https://qwsoftware.github.io/qwcontrol-cli/commands/#jobs) pages if you prefer using an textual _Job_ definition.
+Options can also be defined as part of a _job_ definition and later loaded to the server. See [job-xml](/en/user-guide/document-format-reference/job-v20.md) and [job-yaml](/en/user-guide/document-format-reference/job-yaml-v12.md) ands [rd _jobs_](/en/https://qwsoftware.github.io/cli/commands/#jobs) pages if you prefer using an textual _Job_ definition.
 
 ## Defining an option
 
@@ -91,7 +91,7 @@ Allowed values provide a model of possible choices. This can contain a static li
 
 ### Restrictions
 
-Defines criteria on which input to accept or present. Option choices can be controlled using the "Enforced from values" restriction. When set "true", QW Control will only present a popup menu. If set "false", a text field will also be presented. Enter a regular expression in the "Match Regular Expression" field the _Job_ will evaluate when run.
+Defines criteria on which input to accept or present. Option choices can be controlled using the "Enforced from values" restriction. When set "true", will only present a popup menu. If set "false", a text field will also be presented. Enter a regular expression in the "Match Regular Expression" field the _Job_ will evaluate when run.
 
 ### Requirement
 
@@ -317,7 +317,7 @@ Secure Options cannot be used as authentication input to _Node_ Executors, you m
 
 ### Important Note
 
-"Secure" option values are not stored in the QW Control database when the _Job_ is executed, but the value that is entered
+"Secure" option values are not stored in the database when the _Job_ is executed, but the value that is entered
 is exposed to use in scripts and commands. Make sure you acknowledge these security implications before using them. Secure options are available for use in scripts and command like any other option value:
 
 - as plaintext arguments using `${option.name}`
@@ -345,7 +345,7 @@ When you [define a _Job_ Reference _step_ in a workflow](/en/user-guide/node-ste
 
 This constraint is to maintain the security design of these options:
 
-1. Secure options should not to be stored in the QW Control execution database, so must not be used as plain option values.
+1. Secure options should not to be stored in the execution database, so must not be used as plain option values.
 2. Secure Remote Authentication options should not be used in scripts/commands, so must not be used as Secure or Plain option values.
 
 As an example, here is are two _jobs_, _Job_ A and _Job_ B, which define some options:
@@ -386,7 +386,7 @@ The path must indicate a stored `password` entry in the storage facility.
 
 A model of option values can be retrieved from an external source called an _option model provider_. When the `valuesUrl` is specified for an Option, then the model of allowed values is retrieved from the specified URL.
 
-This is useful in a couple of scenarios when QW Control is used to coordinate process that depend on other systems:
+This is useful in a couple of scenarios when is used to coordinate process that depend on other systems:
 
 - Deploying packages or artifacts produced by a build or CI server, e.g. Jenkins.
   - A list of recent Jenkins build artifacts can be imported as Options data, so that a User can pick an appropriate package name to deploy from a list.
@@ -402,7 +402,7 @@ Option model providers are configured on a per-Option basis (where a _Job_ may h
 ### Requirements
 
 1. Options model data must be [JSON formatted](http://www.json.org).
-2. It must be accessible via HTTP(S) or on the local disk for the QW Control server.
+2. It must be accessible via HTTP(S) or on the local disk for the server.
 3. It must be in one of two JSON structures, _either_:
    - An array of string values
    - OR, an array of Maps, each with two entries, `name` and `value`.
@@ -411,7 +411,7 @@ Option model providers are configured on a per-Option basis (where a _Job_ may h
 
 ### Configuration
 
-Each Option entry for a _Job_ can be configured to get the set of possible values from a remote URL. If you are authoring the _Jobs_ via [_job_.xml file format](/en/user-guide/document-format-reference/job-v20.md#option), simply add a `valuesUrl` attribute for the `<option>`. If you are modifying the _Job_ in the QW Control web GUI, you can entry a URL in the "Remote URL" field for the Option.
+Each Option entry for a _Job_ can be configured to get the set of possible values from a remote URL. If you are authoring the _Jobs_ via [_job_.xml file format](/en/user-guide/document-format-reference/job-v20.md#option), simply add a `valuesUrl` attribute for the `<option>`. If you are modifying the _Job_ in the web GUI, you can entry a URL in the "Remote URL" field for the Option.
 
 e.g.:
 
@@ -473,7 +473,7 @@ Name Value List with default selections:
 
 ### URL connection parameters
 
-You can configure timeouts globally as described in [Configuration - _Job_ Remote Option URL connection parameters](/en/administration/configuration/config-file-reference.md#qwcontrol-config.properties).
+You can configure timeouts globally as described in [Configuration - _Job_ Remote Option URL connection parameters](/en/administration/configuration/config-file-reference.md#config.properties).
 
 You can also specify these connection parameters on a per-URL basis:
 
@@ -500,7 +500,7 @@ Cascading options allow an option's Remote values URL to embed the values entere
 
 This provides a mechanism for declaring hierarchical or dependent sets of option values.
 
-E.g. if you wanted one option to choose a "repository", and another option to select a specific "branch" within that repository. Define your option provider to respond correctly based on the selected "repository" value, and define your Remote option URL to include a reference to the "repository" option value. The QW Control GUI will then reload the JSON values from the remote URL and insert the correct value of the "repository" option when loading the "branch" option values. If the user changes the selected repository, then the branch values will be automatically refreshed.
+E.g. if you wanted one option to choose a "repository", and another option to select a specific "branch" within that repository. Define your option provider to respond correctly based on the selected "repository" value, and define your Remote option URL to include a reference to the "repository" option value. The GUI will then reload the JSON values from the remote URL and insert the correct value of the "repository" option when loading the "branch" option values. If the user changes the selected repository, then the branch values will be automatically refreshed.
 
 You can declare a dependency of one option to another by embedding property references within the remote values URL. The property reference is of the form `${option.[name].value}`. If you declare an option with a remote values URL like `http://server/options?option2=${option.option2.value}`, then that option will depend on the value of the "option2" option.
 
@@ -532,9 +532,9 @@ Properties available for _Job_ context:
 - `description`: _Job_ description
 - `project`: Project name
 - `user.name`: User executing the _job_
-- `qwsoftware.nodename`: Name of the QW Control server _node_
-- `qwsoftware.serverUUID`: UUID of the QW Control server _node_ (cluster mode)
-- `qwsoftware.basedir`: File path of the QW Control base dir (`file://` URLs only)
+- `qwsoftware.nodename`: Name of the server _node_
+- `qwsoftware.serverUUID`: UUID of the server _node_ (cluster mode)
+- `qwsoftware.basedir`: File path of the base dir (`file://` URLs only)
 
 Additionally the `qwsoftware.*` properties can be specified without the `job.` prefix, e.g. `${qwsoftware.basedir}`.
 
@@ -587,7 +587,7 @@ Query Parameters format for options:
 For example, if the URL for the _Job_ is:
 
 ```http
-http://qwcontrol:4440/project/MyProject/job/show/ab698597-9753-4e98-bdab-90ebf395b0d0
+http://localhost:4440/project/MyProject/job/show/ab698597-9753-4e98-bdab-90ebf395b0d0
 ```
 
 Then you can pre-fill the values for `myopt1` and `myotheropt` by appending this to the URL:
@@ -599,7 +599,7 @@ Then you can pre-fill the values for `myopt1` and `myotheropt` by appending this
 The result would be:
 
 ```http
-http://qwcontrol:4440/project/MyProject/job/show/ab698597-9753-4e98-bdab-90ebf395b0d0?opt.myopt1=some+value&opt.myotheropt=another+value
+http://localhost:4440/project/MyProject/job/show/ab698597-9753-4e98-bdab-90ebf395b0d0?opt.myopt1=some+value&opt.myotheropt=another+value
 ```
 
 Note: be sure to properly escape the strings for option values, and if necessary for the option names as well.

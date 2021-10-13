@@ -11,18 +11,18 @@ const navbarUserGuideEn = require('./navbar-menus/en/user-guide')
 
 module.exports = {
     base: `/`,
-    title: 'QW Control',
+    title: 'Documentos',
     locales: {
         '/': {
             lang: 'pt-BR',
-            description: 'Plataforma de automação e orquestração de serviços, processos de TI e de negócios.',
+            description: 'Ainda assim, existem dúvidas a respeito de como o julgamento imparcial das eventualidades aponta para a melhoria das formas de ação.',
         },
         '/en/': {
             lang: 'en-US',
-            description: 'Automation and orchestration platform for services, IT and business processes.',
+            description: 'Still, there are doubts about how the impartial judgment of eventualities points to the improvement of the forms of action.',
         },
     },
-    head: [['link', { rel: 'icon', href: '/images/qwcontrollogo-black-small.png' }]],
+    head: [['link', { rel: 'icon', href: '/images/logo-black.png' }]],
     themeConfig: {
         locales: {
             '/': {

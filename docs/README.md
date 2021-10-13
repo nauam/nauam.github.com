@@ -1,15 +1,15 @@
 ---
 home: true
-title: 'Documentação da QW Controle'
-heroImage: /images/qwcontrollogo-black-big.png
+title: 'Documentação'
+heroImage: /images/logo-black-big.png
 actionText: Começar →
 actionLink: /introduction/introduction.html
 features:
-  - title: Comodidade
-    details: Controle, analise e integre tudo em um ponto único de controle em tempo real, através de interface gráfica com segurança, criptografia e controle de acesso.
-  - title: Orquestração
-    details: Processo podem ser agendados, acompanhados e medidos, em ambientes distribuído e mainframe, gerando alertas sempre que um processo falhar.
-  - title: Execução
-    details: Conecte máquinas com comandos bath, shell, python, java. Trafegue documentos com segurança por protocolos FTP(s), HTTP(s), Odette e FDS.
-footer: © QW Software | 2020-2021 | Todos os direitos reservados.
+  - title: Causa
+    details: O que temos que ter sempre em mente é que a consulta aos diversos militantes causa impacto indireto na reavaliação das direções preferenciais no sentido do progresso.
+  - title: Ambiente
+    details: É claro que a hegemonia do ambiente político obstaculiza a apreciação da importância das regras de conduta normativas.
+  - title: Nunca
+    details: Nunca é demais lembrar o peso e o significado destes problemas, uma vez que o fenômeno da Internet possibilita uma melhor visão global dos conhecimentos estratégicos para atingir a excelência.
+footer: © GuiHub | 2020-2021 | Todos os direitos reservados.
 ---

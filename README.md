@@ -1,6 +1,6 @@
-# QW Control Documentation
+# Documentation
 
-QW Control Documentation project.
+Documentation project.
 
 ## Getting starting
 
@@ -30,7 +30,7 @@ Run this before the first you start the docs site locally.
 yarn install
 ```
 
-### Run the QW Control Docs site locally
+### Run the Docs site locally
 
 ```sh
 yarn run docs:dev

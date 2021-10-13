@@ -14,7 +14,7 @@ No novo formulário de _job_:
 
 Para "Nome do _Job_", digite "info" e para "Grupo", digite "administração/recursos". Se você deseja especificar seu próprio UUID, pode inseri-lo no campo. Caso contrário, um valor exclusivo será definido para você. Fornecer uma descrição será útil para outros usuários compreenderem a intenção e o propósito do _Job_.
 
-Dê uma descrição ao _job_. É recomendada fornecer uma breve descrição na primeira linha. Crie uma linha em branco e todas as linhas subsequentes podem usar o formato de redução. Você pode ver a linha 3, tem um texto que mostra um link de URL em formato de marcação. Quando a QW Control mostra o _job_, essas informações extras podem ser exibidas para o usuário. Rich text é útil para vincular a ferramentas externas ou até mesmo tabelas e gráficos. Qualquer coisa útil para apoiar o usuário do _job_.
+Dê uma descrição ao _job_. É recomendada fornecer uma breve descrição na primeira linha. Crie uma linha em branco e todas as linhas subsequentes podem usar o formato de redução. Você pode ver a linha 3, tem um texto que mostra um link de URL em formato de marcação. Quando a mostra o _job_, essas informações extras podem ser exibidas para o usuário. Rich text é útil para vincular a ferramentas externas ou até mesmo tabelas e gráficos. Qualquer coisa útil para apoiar o usuário do _job_.
 
 Marque a caixa "Enviar para _Nós_". Escolha a opção "Excluir Filtros _Nó_" e digite o nome do seu servidor do QW controle. Isso fará com que o _job_ seja executado apenas nos _nós_ remotos (por exemplo, centos54 e ubuntu).
 
@@ -127,7 +127,7 @@ Na GUI, a caixa de seleção "Despacho para _nós_" permite que você habilite o
 Você pode clicar nos diferentes campos de filtro "Nome" e "Tags" para inserir valores de filtro para esses campos. Ao atualizar os valores, você verá a seção "_Nós_ correspondentes" atualizada para refletir a lista de _nós_ que corresponderão às entradas. Você pode clicar em "Mais" para ver mais filtros de inclusão disponíveis, e você pode clicar em "Filtros estendidos" para inserir filtros de exclusão para os mesmos campos.
 
 ::: tip
-Por padrão, a seção "_Nós_ correspondentes" mostrará no máximo 100 _nós_ no resultado da pesquisa. Para personalizar este valor máximo, você deve definir a propriedade `qwsoftware.gui.matchedNodesMaxCount` no arquivo qwcontrol-config.property
+Por padrão, a seção "_Nós_ correspondentes" mostrará no máximo 100 _nós_ no resultado da pesquisa. Para personalizar este valor máximo, você deve definir a propriedade `qwsoftware.gui.matchedNodesMaxCount` no arquivo config.property
 :::
 
 #### Threadcount
@@ -224,9 +224,9 @@ Da mesma forma, para copiar uma definição de _job_ para um novo _job_, pressio
 
 ## Exportando definições do _Job_
 
-As definições de _job_ criadas dentro do console gráfico do QW Control podem ser exportadas para os formatos de arquivo XML ou YAML e ser usadas para importação posterior.
+As definições de _job_ criadas dentro do console gráfico do podem ser exportadas para os formatos de arquivo XML ou YAML e ser usadas para importação posterior.
 
-Existem dois métodos para recuperar as definições de _Job_: por meio da interface gráfica do QW Control e por meio da ferramenta shell [rd- jobs ].
+Existem dois métodos para recuperar as definições de _Job_: por meio da interface gráfica do e por meio da ferramenta shell [rd- jobs ].
 
 Na guia Definição do _Job_, localize o botão de menu "Download da definição". Clicar no ícone permitirá que você escolha o formato XML ou YAML para baixar a definição.
 
